@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+{% block content %}
+
+<html>
+<style>
+input[type=text], select {
+  width: 50%;
+  padding: 7px 10px;
+  margin: 4px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 1px;
+  box-sizing: border-box;
+}
+input[type=password], select {
+  width: 50%;
+  padding: 7px 10px;
+  margin: 4px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 1px;
+  box-sizing: border-box;
+}
+input[type=submit] {
+  width: 50%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 7px 10px;
+  margin: 4px 0;
+  border: none;
+  border-radius: 1px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+p{
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+</style>
+<body>
+<p>
+  <form action="/action_page.php">
+    <h5>User name</h5>
+    <input type="text" ><br>
+
+    <h5>Password</h5>
+    <input type="password"><br>
+    <input type="submit" value="Submit">
+  </form>
+</p>
+</body>
+</html>
+{% endblock content%}
